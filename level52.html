@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Level 5</title>
+        <link rel="stylesheet" href="styles.css">
+            <!-- disable a button after click -->
+            <script language="javascript" src="functions.js"></script>
+
+    </head>
+    <body>
+            <audio id="audioW">
+                <source src="audio/buzz.mp3" type="audio/mpeg"></src>
+            </audio>
+            <audio id="audioC">
+                <source src="audio/bell.mp3" type="audio/mpeg"></src>
+            </audio>
+            <audio id="audioClear">
+                <source src="audio/cleared.mp3" type="audio/mpeg"></src>
+            </audio>
+            <table class="center1">
+                <tr style="height: 80px">
+                    <td><image id="animal0" src="photos/blank.jpg" onclick="undo5('animal0'); return false;" alt="animal 0"></image></td>
+                    <td><image id="animal1" src="photos/blank.jpg" onclick="undo5('animal1'); return false;" alt="animal 1"></image></td>
+                    <td><image id="animal2" src="photos/blank.jpg" onclick="undo5('animal2'); return false;" alt="animal 2"></image></td>
+                    <td><image id="animal3" src="photos/blank.jpg" onclick="undo5('animal3'); return false;" alt="animal 3"></image></td>
+                    <td><image id="animal4" src="photos/blank.jpg" onclick="undo5('animal4'); return false;" alt="animal 4"></image></td>
+                    <td><image id="animal5" src="photos/blank.jpg" onclick="undo5('animal5'); return false;" alt="animal 5"></image></td>
+                    <td><image id="animal6" src="photos/blank.jpg" onclick="undo5('animal6'); return false;" alt="animal 6"></image></td>
+                </tr>
+                <tr class="name">
+                    <td valign="top" id="name0"></td>
+                    <td valign="top" id="name1"></td>
+                    <td valign="top" id="name2"></td>
+                    <td valign="top" id="name3"></td>
+                    <td valign="top" id="name4"></td>
+                    <td valign="top" id="name5"></td>
+                    <td valign="top" id="name6"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td valign="top"><image id="result1" src="photos/blank.jpg"></image></td>
+                    <td valign="top"><image id="result2" src="photos/blank.jpg"></image></td>
+                    <td valign="top"><image id="result3" src="photos/blank.jpg"></image></td>
+                    <td valign="top"><image id="result4" src="photos/blank.jpg"></image></td>
+                    <td valign="top"><image id="result5" src="photos/blank.jpg"></image></td>
+                    <td valign="top"><image id="result6" src="photos/blank.jpg"></image></td>
+                </tr>
+            </table>
+
+            <img id="doggy1" src="photos/level5.JPG">
+            <div class="fixed1">
+
+                    <input type="image" id="mycard1" src="photos/koala.JPG" onclick="move5('mycard1'); return false;" alt="koala">
+                    <input type="image" id="mycard2" src="photos/elk.JPG" onclick="move5('mycard2'); return false;" alt="elk">
+                    <input type="image" id="mycard3" src="photos/eagle.JPG" onclick="move5('mycard3'); return false;" alt="eagle">
+                    <input type="image" id="mycard4" src="photos/pig.JPG" onclick="move5('mycard4'); return false;" alt="pig">
+                    <input type="image" id="mycard5" src="photos/guinea pig.JPG" onclick="move5('mycard5'); return false;" alt="guinea pig">
+                    <input type="image" id="mycard6" src="photos/gorilla.JPG" onclick="move5('mycard6'); return false;" alt="gorilla">
+                    <input type="image" id="mycard7" src="photos/antelope.JPG" onclick="move5('mycard7'); return false;" alt="antelope">
+            </div>
+
+            <button class="button" id="backHome" onclick="document.location='home.html'">Back home</button>
+            <button class="button" id="quit1" onclick="document.location='home.html'">Quit</button>
+        <footer class="foot">
+            <p>&copy; Kyoko Suenaga November, 2020</p>
+        </footer>
+    </body>
+</html>

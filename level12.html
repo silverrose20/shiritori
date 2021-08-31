@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Level 1</title>
+        <link rel="stylesheet" href="styles.css">
+            <!-- disable a button after click -->
+            <script language="javascript" src="functions.js"></script>
+
+    </head>
+    <body>
+            <audio id="audioW">
+                <source src="audio/buzz.mp3" type="audio/mpeg"></src>
+            </audio>
+            <audio id="audioC">
+                <source src="audio/bell.mp3" type="audio/mpeg"></src>
+            </audio>
+            <audio id="allDone">
+                <source src="audio/allDone.mp3" type="audio/mpeg"></src>
+            </audio>
+            <table class="center">
+                <tr style="height: 80px">
+                    <td><image id="animal0" src="photos/bear.JPG" alt="bear"></td>
+                    <td><image id="animal1" src="photos/blank.jpg" onclick="undo1('animal1'); return false;" alt="animal 1"></image></td>
+                    <td><image id="animal2" src="photos/blank.jpg" onclick="undo1('animal2'); return false;" alt="animal 2"></image></td>
+                    <td><image id="animal3" src="photos/blank.jpg" onclick="undo1('animal3'); return false;" alt="animal 3"></image></td>
+                </tr>
+                <tr class="name">
+                    <td valign="top">Bear</td>
+                    <td valign="top"id="name1"></td>
+                    <td valign="top"id="name2"></td>
+                    <td valign="top"id="name3"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td valign="top"><image id="result1" src="photos/blank.jpg"></image></td>
+                    <td valign="top"><image id="result2" src="photos/blank.jpg"></image></td>
+                    <td valign="top"><image id="result3" src="photos/blank.jpg"></image></td>
+                </tr>
+            </table>
+
+            <img id="doggy" src="photos/level1.JPG">
+            <div class="fixed">
+
+                    <input type="image" id="mycard1" src="photos/elk.JPG" onclick="move1('mycard1'); return false;" alt="elk">
+                    <input type="image" id="mycard2" src="photos/rabbit.JPG" onclick="move1('mycard2'); return false;" alt="rabbit">
+                    <input type="image" id="mycard3" src="photos/turtle.JPG" onclick="move1('mycard3'); return false;" alt="turtle">
+            </div>
+
+            <button class="button" id="Go2" onclick="goLevel2()">Go to next level</button>
+            <button class="button" id="quit" onclick="document.location='home.html'">Quit</button>
+        <footer class="foot">
+            <p>&copy; Kyoko Suenaga November, 2020</p>
+        </footer>
+    </body>
+</html>
